@@ -1,0 +1,63 @@
+#############################################################################################################
+
+	This document covers system monitoring commands.
+
+#############################################################################################################
+
+
+top
+---
+	top command list all running processes with CPU consumption and memory consumption.
+	$top	//List all running processes with pid and cpu consumption.
+
+df
+--
+	df command project the system state in terms of memory used. It gives your disk partition information.
+	df -h		// This will project details in human readable form.
+
+
+dmesg
+-----
+	This command gives information about warning messages and error messages.
+	$dmesg		// This will print warning and error messages on the screen.
+	$dmesg | more	// One page at a time.
+
+iostat
+------
+	This command gives information about io statestics. read and write cycle on to the disk.
+	$iostat 1	// This will keep running for 1 sec interval.
+
+
+netstat
+-------
+	This command will give information about gatway 
+	$netstat -rmv	// This will print gateway information and subnet mask.
+
+free
+----
+	It gives info about free memory and swap memory.
+	$free		//total,used,free all type of memory is projected here.
+
+
+cat /proc/cpuinfo
+-----------------
+	This proc directory keeps information about system's resources.
+
+
+#############################################################################################################
+
+Log monitoring
+
+#############################################################################################################
+
+Linux operating system keeps all log files in /var/log  directory.
+
+
+#############################################################
+
+dmidecode
+---------
+	This command gives information about system.
+	BIOS/Processor/OS etc. useful information about menufecturer as well.
+
+		

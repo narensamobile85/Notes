@@ -1,0 +1,68 @@
+
+Git is a distributed version control system.Few helpful git commands.
+
+
+$git config --list
+
+This command display the current user configuration for git such as user name and configured email.
+
+Git configuration set at three different level
+
+	1. System level
+	2. Global level
+	3. Local level
+
+
+
+$git --version
+
+This command will display the installed git version on your system.
+
+
+$git add
+
+	This command is used to add a file that is in working directory to the staging area.
+
+$git commit
+
+	This command is used to add all files that are staged to the local repository.
+
+$git push
+
+	This command is used to add all committed files of local repository to remote repository.
+
+$git fetch
+
+	This command is used to get files from the remote repository to the local repository but not into the working directory.
+
+$git pull
+
+	This command is used to get files from remote repository to directly into working directory. It is equivalent to a git fetch and git merge.
+
+$git merge
+
+	This command is used to get files from the local repository to the working directory.
+
+ 
+$git log
+
+	This command will provide all commit history with comments provided at the time of commit. To execute this command you should be in git repo
+
+	
+$git commit -m "Message"
+
+	This command used to commit the staged file to commit in working directory. Added text message will be supplied as commit message for future reference. 
+
+$git status 
+
+	This command will show the status of working directory. Whether modification made and staged or not staged and committed or not committed.
+
+$git remote -v
+
+	This command will show all remote repository connections.It will list all urls of remote repo with which we have connections.
+
+ 
+$git push -u origin
+
+	This command will push local repo content to remote repo
+	This will require token generation from remote branch for authentication.

@@ -1,0 +1,20 @@
+**************************************************************************************
+In This file we have information about NIC and how to configure them
+
+**************************************************************************************
+
+ifconfig
+--------
+	This command prints all network related information and their ip addresses.
+	eth0s25 ethernet link with cat 5 cabel
+	wlo1	wireless network 
+
+ifdown
+------
+	This command bring down all NIC according to provided options
+
+ifup
+---- 	
+	This command is used for bringing up the network and it works according
+	to provided option.
+

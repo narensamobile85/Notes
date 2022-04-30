@@ -1,0 +1,29 @@
+********************************************************
+
+HTTP - Hyper Text Transfer Protocol
+
+********************************************************
+
+It is a stateless protocol
+
+For Ubuntu linux distribution Apache HTTP server is availbale to install and run HTTP server
+
+Apache HTTP server is basically a file server. It can not implement any logic. 
+It can just only transfer the files. 
+
+HTTP uses the port 80 [Generally]
+
+Some helpful linux commands.
+
+
+Apache2
+-------
+	To install apache2 run below command.
+	$sudo apt-get install apache2	//This will download apache package and install on machine.
+
+	To check if apache web server is running or not, run below command.
+	$systemctl status apache2
+
+	To start apache server, run below command 
+	$sudo systemctl start apache2
+	 

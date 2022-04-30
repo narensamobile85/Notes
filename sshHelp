@@ -1,0 +1,21 @@
+*******************************************************
+
+This file contain hints for ssh connection
+
+*******************************************************
+
+
+to establish the connection with remote server first make sure that
+we are able to ping that.
+$ping hostname
+
+
+At remote server ssh service shall be running.
+$sudo service status ssh
+
+If ssh is not installed on remote server , install openssh.server
+
+$sudo apt-get install openssh.server
+
+
+

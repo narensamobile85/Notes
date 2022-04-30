@@ -1,0 +1,117 @@
+************************************************************************************************************************************************
+
+	While working with vi editor we usually come across the following mode
+
+	
+	Command Mode : THIS  mode enable us to perform administrative tasks such as
+			Saving the file.
+			Executing the commands.
+			Moving the cursor.
+		 	Cutting and pasting the lines or words, watever we type is interpreted as commands.
+
+	Insert mode : THIS  mode enables us to insert text into the file. Everything that is typed is interpreted as input and placed in the file.
+
+*************************************************************************************************************************************************
+
+	- Vi always starts in command mode.
+	- To enter into insert mode user shall press "i".
+	- To enter into insert mode right after the cursor, user shall press "a".
+	- To undo last command press "u" 
+	
+
+
+*************************************************************************************************************************************************
+
+	Moving within the file.
+
+		k- Move the cursor up in the line.
+		j- Move the cursor down on the line.
+		h- Move the cursor to the left one charactor.
+		l- Move the cursoe to the right one charactor.
+************************************************************************************************************************************************
+
+
+	Redirect - THIS  (> >> < <<) command is being used to redirect the output of any given command to a specific file.
+
+	$echo "Hello World"
+	$echo "Hello World" > filename		//THIS  command will put the given string in file filename. It will erase all content first and then will put the new content
+	$echo "Hello World" >> filename		//THIS  command will append the given strin at the bottom of the file filename.
+	$ls -l > filename			//THIS  command will redirect the output of ls -ltr command to file filename.
+
+***********************************************************************************************************************************************
+Thu Mar 24 23:26:24 IST 2022
+
+Everything in linux is a file. Directory is also a file 
+ls -a	//To list all hidded files
+
+#############################################################
+
+	Pipes - Pipes are used to inject output of one command to another command.
+
+	Command1 -> Pipe -> Command2
+
+	Example: $ls -ltr | more
+		 $ls -ltr | tail -1	//tail is command which shows end of the results. tail -1 will show the last line of the result
+
+		 $ls -ltr | grep ^d	//THIS  will list all directories in ltr form and those are a subset of ls -ltr command's output.
+#############################################################
+
+	head - THIS  command will show first 10 lines of the file
+	$head filename
+	$head -1 filename 	//THIS  command will display first one line of the file
+
+
+	tail - THIS  command will show last 10 lines of the file
+	$tail -1 filename 	//THIS  command will display last one line of the file.
+
+	more - THIS  command will display pagewise content of the file
+	less - this command will display pagewise content of the file. please try it and check the differences between these two commands.
+
+##############################################################
+
+	$diff file1 file2	//THIS  command compare two given files line by line
+	$comp file1 file2	//THIS  command compare two given files byte by byte.
+
+
+
+
+
+sed
+	Stream editor. THIS  command is used for editing the text present in any text file.
+
+	$sed 's/oldtext/newtext/' filename 		//THIS  command will change the content only on the display but will not change in the actul file.
+	$sed -i 's/oldtext/newtext/ filename		//THIS  command will change the actul content of the text file
+
+
+
+##############################################################
+
+
+paste from clip board
+
+	In order to paste the content copied in clip board we need to press Ctrl + Shift + v
+
+copy from within file
+
+	To select a line press V (Shift +v)
+	To copy that line press y (small letter y)
+	To paste the line press P (to paste before cursor) p ( to paste after cursor)
+
+#############################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
