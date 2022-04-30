@@ -66,3 +66,15 @@ $git push -u origin
 
 	This command will push local repo content to remote repo
 	This will require token generation from remote branch for authentication.
+
+$git remote add origin <url of remote server repo>
+
+	This command will add the remote server repository as origin to local working directory
+
+$git remote -v
+
+	This command display origin source for fetch and push
+
+$git branch -M main
+
+	This command will create main branch in local repo which can be pushed to remote server repo at later stage
